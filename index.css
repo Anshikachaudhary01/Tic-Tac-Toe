@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-image: url('3D Tic Tac Toe BG.png'); 
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat;
+        text-align: center;
+}
+
+.container {
+    margin-top: 230px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 15px;
+  padding: 20px;
+  border: 5px solid #00f5d4; 
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00f5d4;
+  background-color: #1e1e2f;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #2e2e38;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.box:hover{
+    background-color: #39395e;
+}
+#reset-btn{
+    margin-top: 30px;
+  padding: 10px 20px;
+  color: #3a0ca3;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #ff8c42; 
+    color: black;            
+    cursor: pointer;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #00bbf9;
+    border-radius: 1rem;
+    color: #3a0ca3;
+    border: none; 
+}
+
+#msg {
+    font-size: 7vmin;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow:
+     2px 2px 0 #0a3d62,
+     4px 4px 6px rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+  transform: translateZ(0);
+}
+
+.msg-container  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 15, 40, 0.95); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 9999;
+    padding: 20px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.msg-container button {
+    background-color: #ff6f00;  
+    color: black;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow:
+      0 5px 0 #cc5600,
+      0 9px 15px rgba(255, 111, 0, 0.5);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  .msg-container button:hover {
+    background-color: #cc5600;
+    color: white;
+    box-shadow:
+      0 8px 0 #994000,
+      0 12px 25px rgba(204, 86, 0, 0.7);
+    transform: translateY(-3px);
+  }
+
+.hide{
+    display: none;
+}
