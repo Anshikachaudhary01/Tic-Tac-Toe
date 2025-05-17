@@ -74,6 +74,8 @@ Audio might not play automatically in some browsers unless there is a user inter
 Anshika Chaudhary
 Feel free to reach out or fork this repo and make it your own!
 
+[![Play Game](https://img.shields.io/badge/Play--Now-TicTacToe-8e44ad?style=for-the-badge&logo=github)](https://anshikachaudhary01.github.io/Tic-Tac-Toe/)
+
 📄 License
 This project is open-source and free to use under the MIT License.
 
